@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/custom_button.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/custom_height_icon.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/custom_input.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/custom_weight_icon.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/ic_baseline_boy_24.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/ic_baseline_boy_24_focused.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/ic_baseline_height_24.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/drawable/ic_baseline_height_24_focused.xml" value="0.1955" />
+        <entry key="..\:/imcCalculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

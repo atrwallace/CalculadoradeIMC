@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".presentation.MainActivity">
+
+    <EditText
+        android:id="@+id/editTxtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_height_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/height"
+        android:inputType="none|numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_weight_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/weight"
+        android:inputType="none|text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtHeight"
+        app:layout_constraintStart_toStartOf="@+id/editTxtHeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtHeight" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/buttonCalculate"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtWeight"
+        app:layout_constraintStart_toStartOf="@+id/editTxtWeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtWeight" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="48sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtWeight"
+        app:layout_constraintStart_toStartOf="@+id/editTxtWeight"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtResult"
+        app:layout_constraintStart_toStartOf="@+id/txtResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult"
+        android:layout_marginTop="14dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
