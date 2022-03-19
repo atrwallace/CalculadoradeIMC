@@ -7,9 +7,10 @@
     android:background="#191919"
     tools:context=".presentation.MainActivity">
 
-    <EditText
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        app:mask="#.##"
         android:id="@+id/editTxtHeight"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="150dp"
@@ -20,16 +21,17 @@
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
         android:hint="@string/height"
-        android:inputType="none|numberDecimal"
+        android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        app:mask="###"
         android:id="@+id/editTxtWeight"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="40dp"
@@ -40,7 +42,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
         android:hint="@string/weight"
-        android:inputType="none|text"
+        android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/editTxtHeight"
@@ -49,7 +51,7 @@
 
     <Button
         android:id="@+id/buttonCalculate"
-        android:layout_width="200dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
         android:background="@drawable/custom_button"

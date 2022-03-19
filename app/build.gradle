@@ -49,6 +49,9 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
     implementation "io.insert-koin:koin-android:3.1.4"
 
+    // Mask
+    implementation("io.github.vicmikhailau:MaskedEditText:4.0.7")
+
     // Tests
     testImplementation "io.mockk:mockk:1.12.3"
     testImplementation "io.mockk:mockk-agent-jvm:1.12.3"

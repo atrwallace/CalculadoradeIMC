@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.imccalculator.data.IMCDataClass
 import java.lang.NumberFormatException
+import java.text.DecimalFormat
 
 class MainViewModel() : ViewModel() {
     val error = MutableLiveData<Unit>()
@@ -36,7 +37,8 @@ class MainViewModel() : ViewModel() {
     fun calculateBMI(height: String, weight: String) {
         if (finalValidationToCalculate(height, weight)) {
             val bmi = weight.toFloat() / (height.toFloat() * height.toFloat())
-            bmiCategorySelect(bmi)
+            val roundNumber = String.format("%.2f", bmi).toFloat()
+            bmiCategorySelect(roundNumber)
         } else {
             error.value = Unit
         }
