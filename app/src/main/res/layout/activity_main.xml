@@ -73,7 +73,8 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/editTxtWeight"
         app:layout_constraintStart_toStartOf="@+id/editTxtWeight"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        tools:text="34.23"/>
 
     <TextView
         android:id="@+id/txtCategory"
@@ -85,5 +86,6 @@
         app:layout_constraintEnd_toEndOf="@+id/txtResult"
         app:layout_constraintStart_toStartOf="@+id/txtResult"
         app:layout_constraintTop_toBottomOf="@+id/txtResult"
-        android:layout_marginTop="14dp"/>
+        android:layout_marginTop="14dp"
+        tools:text="Category Test"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
