@@ -14,6 +14,7 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     @Inject lateinit var viewmodel: MainViewModel
+    private var bmiresult = IMCDataClass()
     override fun onCreate(savedInstanceState: Bundle?) {
         (applicationContext as MyApplication).appcomponent.inject(this)
         super.onCreate(savedInstanceState)

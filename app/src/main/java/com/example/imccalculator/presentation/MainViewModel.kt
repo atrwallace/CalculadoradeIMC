@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.imccalculator.data.IMCDataClass
 import java.lang.NumberFormatException
+import java.util.*
 import javax.inject.Inject
 
 class MainViewModel @Inject constructor () : ViewModel() {
@@ -37,7 +38,8 @@ class MainViewModel @Inject constructor () : ViewModel() {
     fun calculateBMI(height: String, weight: String) {
         if (finalValidationToCalculate(height, weight)) {
             val bmi = weight.toFloat() / (height.toFloat() * height.toFloat())
-            val roundNumber = String.format("%.2f", bmi).toFloat()
+            val locale = Locale("EN", "US")
+            val roundNumber = String.format(locale,"%.2f", bmi).toFloat()
             bmiCategorySelect(roundNumber)
         } else {
             error.value = Unit
