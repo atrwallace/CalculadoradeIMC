@@ -4,9 +4,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.imccalculator.data.IMCDataClass
 import java.lang.NumberFormatException
-import java.text.DecimalFormat
+import javax.inject.Inject
 
-class MainViewModel() : ViewModel() {
+class MainViewModel @Inject constructor () : ViewModel() {
     val error = MutableLiveData<Unit>()
     val calculationResult = MutableLiveData<IMCDataClass>()
     val emptyReturn = MutableLiveData<Unit>()
